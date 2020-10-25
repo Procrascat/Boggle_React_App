@@ -1,0 +1,115 @@
+<div className="App">
+      
+    <img src={logo}  width="25%" height="25%" class="logo" alt="Bison Boggle Logo" />
+
+    <div className="Toggle-game-state">
+        <button variant="outlined">
+            {buttonText}
+        </button>
+    </div>
+
+    <div className="Input-select-size">
+        <div className"Input-select-size">
+            <FormControl >
+
+            <Select
+                labelId="sizelabel"
+                id="sizemenu"
+
+                onChange={handleChange}
+            >
+                <MenuItem value={3}>3</MenuItem>
+                <MenuItem value={4}>4</MenuItem>
+                <MenuItem value={5}>5</MenuItem>
+                <MenuItem value={6}>6</MenuItem>
+                <MenuItem value={7}>7</MenuItem>
+                <MenuItem value={8}>8</MenuItem>
+                <MenuItem value={9}>9</MenuItem>
+                <MenuItem value={10}>10</MenuItem>
+            </Select>
+                <FormHelperText>Set Grid Size</FormHelperText>
+            </FormControl>
+        </div>
+    </div>
+
+    <div className="Board-div">
+        <Grid container justify="center">
+            <Grid item xs={12}>
+                <Grid container spacing=1 justify="space-around">
+                    <Grid item xs=1 className="Tile">
+                        <Paper elevation=4>
+                            A
+                        </Paper>
+                    </Grid>
+                    <Grid item xs=1 className="Tile">
+                        <Paper elevation=4>
+                            B
+                        </Paper>
+                    </Grid>
+                    <Grid item xs=1 className="Tile">
+                        <Paper elevation=4>
+                            C
+                        </Paper>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid item xs={12}>
+                <Grid container spacing=1 justify="space-around">
+                    <Grid item xs=1 className="Tile">
+                        <Paper elevation=4>
+                            D
+                        </Paper>
+                    </Grid>
+                    <Grid item xs=1 className="Tile">
+                        <Paper elevation=4>
+                            E
+                        </Paper>
+                    </Grid>
+                    <Grid item xs=1 className="Tile">
+                        <Paper elevation=4>
+                            F
+                        </Paper>
+                    </Grid>
+                </Grid>
+            </Grid><Grid item xs={12}>
+                <Grid container spacing=1 justify="space-around">
+                    <Grid item xs=1 className="Tile">
+                        <Paper elevation=4>
+                            G
+                        </Paper>
+                    </Grid>
+                    <Grid item xs=1 className="Tile">
+                        <Paper elevation=4>
+                            H
+                        </Paper>
+                    </Grid>
+                    <Grid item xs=1 className="Tile">
+                        <Paper elevation=4>
+                            I
+                        </Paper>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+    </div>
+
+    <div className="Summary">
+        <h2>SUMMARY</h2>
+            <div>
+                <li key="12">Total Words Found: 12</li>
+            </div>
+
+            <div>
+                <li key="15">Total Time: 3.25 secs</li>
+            </div>
+    </div>
+
+    <div className="Found-solutions-list">
+        <h4>{headerText}: {words.length}</h4>
+
+        <ul>
+            <li> word1 </li>
+            <li> word2 </li>
+        </ul>
+    </div>
+</div>
