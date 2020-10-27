@@ -8,57 +8,57 @@ function Board() {
         <div className="Board-div">
             <Grid container justify="center">
                 <Grid item xs={12}>
-                    <Grid container spacing=1 justify="space-around">
-                        <Grid item xs=1 className="Tile">
-                            <Paper elevation=4>
+                    <Grid container spacing={1} justify="space-around">
+                        <Grid item xs={1} className="Tile">
+                            <Paper elevation={4}>
                                 A
                             </Paper>
                     </Grid>
-                    <Grid item xs=1 className="Tile">
-                        <Paper elevation=4>
+                    <Grid item xs={1} className="Tile">
+                        <Paper elevation={4}>
                             B
                         </Paper>
                     </Grid>
-                    <Grid item xs=1 className="Tile">
-                        <Paper elevation=4>
+                    <Grid item xs={1} className="Tile">
+                        <Paper elevation={4}>
                             C
                         </Paper>
                     </Grid>
                     </Grid>
                 </Grid>
                 <Grid item xs={12}>
-                    <Grid container spacing=1 justify="space-around">
-                    <Grid item xs=1 className="Tile">
-                        <Paper elevation=4>
+                    <Grid container spacing={1} justify="space-around">
+                    <Grid item xs={1} className="Tile">
+                        <Paper elevation={4}>
                             D
                         </Paper>
                     </Grid>
-                    <Grid item xs=1 className="Tile">
-                        <Paper elevation=4>
+                    <Grid item xs={1} className="Tile">
+                        <Paper elevation={4}>
                             E
                         </Paper>
                     </Grid>
-                    <Grid item xs=1 className="Tile">
-                        <Paper elevation=4>
+                    <Grid item xs={1} className="Tile">
+                        <Paper elevation={4}>
                             F
                         </Paper>
                     </Grid>
                     </Grid>
                 </Grid>
                 <Grid item xs={12}>
-                    <Grid container spacing=1 justify="space-around">
-                    <Grid item xs=1 className="Tile">
-                        <Paper elevation=4>
+                    <Grid container spacing={1} justify="space-around">
+                    <Grid item xs={1} className="Tile">
+                        <Paper elevation={4}>
                             G
                         </Paper>
                     </Grid>
-                    <Grid item xs=1 className="Tile">
-                        <Paper elevation=4>
+                    <Grid item xs={1} className="Tile">
+                        <Paper elevation={4}>
                             H
                         </Paper>
                     </Grid>
-                    <Grid item xs=1 className="Tile">
-                        <Paper elevation=4>
+                    <Grid item xs={1} className="Tile">
+                        <Paper elevation={4}>
                             I
                         </Paper>
                     </Grid>
