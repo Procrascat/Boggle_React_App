@@ -1,17 +1,17 @@
 import React from 'react';
-import './SummaryResults.css';
+import './FoundSolutions.css';
 
-function SummaryResults() {
+function SummaryResults({words, totalTime}) {
 
     return (
-        <div className="Summary">
+        <div className="Found-solutions-list">
             <h2>SUMMARY</h2>
                 <div>
-                    <li>Total Words Found: 12</li>
+    <li key="12">Total Words Found: {words.length}</li>
                 </div>
 
                 <div>
-                    <li>Total Time: 3.25</li>
+                    <li>Total Time: {totalTime} secs</li>
                 </div>
         </div>
     );
