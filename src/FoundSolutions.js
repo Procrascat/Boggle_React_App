@@ -2,11 +2,12 @@ import React from 'react';
 import './FoundSolutions.css';
 
 function FoundSolutions({words, headerText}) {
-
+var wordLength = words.length;
     return(
         <div className="Found-solutions-list">
-            {words.length > 0 &&
-                <h4>{headerText}: {words.length}</h4>
+            
+            {wordLength > 0 &&
+                <h4>{headerText}: {wordLength}</h4>
             }   
             <ul>
         {words.map((solution) => {return <li key={solution}>{solution}</li>})}

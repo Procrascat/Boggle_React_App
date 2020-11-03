@@ -13,8 +13,7 @@ import './App.css';
 
 
 
-
-
+//empty comment
 
 
 
@@ -49,21 +48,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <img src={logo}  width="25%" height="25%" class="logo" alt="Bison Boggle Logo" /> 
+      
+      <img src={logo}  width="20%" height="20%" class="logo" alt="Bison Boggle Logo" /> 
       
         <ToggleGameState gameState={gameState}
                        setGameState={(state) => setGameState(state)} 
@@ -83,9 +69,9 @@ function App() {
       }
       { gameState === GAME_STATE.ENDED &&
         <div>
-          <Board board/>
+          <Board board={grid} />
           <SummaryResults words={foundSolutions} totalTime={totalTime}/>
-          <FoundSolutions />
+          <FoundSolutions headerText="Missed Words [wordsize > 3]: " words={allSolutions}/>
           
         </div>
       } 
